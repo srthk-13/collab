@@ -14,7 +14,11 @@ public class calculator {
             break;
             case '/':System.out.println(a/b);
             break;
+            case '%':System.out.println(a%b);
+            break;
+            
             default:System.out.println("wrong operator");
         }
+        sc.close();
     }
 }
