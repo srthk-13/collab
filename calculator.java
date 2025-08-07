@@ -1,5 +1,8 @@
 import java.util.*;
 public class calculator {
+    public static void bit(int a, int b){
+        System.out.println(a>>b);
+    }
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int a=sc.nextInt();
@@ -16,7 +19,8 @@ public class calculator {
             break;
             case '%':System.out.println(a%b);
             break;
-            
+            case '>':bit(a,b);
+            break;
             default:System.out.println("wrong operator");
         }
         sc.close();
